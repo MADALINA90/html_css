@@ -1,0 +1,31 @@
+#positioned{
+  border-style: solid;
+  border-width: medium;
+  border-color: #9900cc;
+  background-color: #f9e6ff;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 300px;
+  left: 800px;
+  transition: width 2s, height 2s;
+  transition-timing-function: ease-in;
+  animation-name: colors;
+  animation-duration: 4s;
+  /*transform: rotate(10deg) scale(2,3) rotateZ(5deg);*/
+}
+@keyframes colors {
+  from {
+    background-color: #f2ccff;
+  }
+  to {
+    background-color: #39004d;
+  }
+}
+#positioned:hover {
+  width: 300px;
+  height: 100px;
+}
+#big{
+  height: 2000px;
+}
